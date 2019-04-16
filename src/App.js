@@ -1,6 +1,8 @@
 // create your App component here
 import React from 'react';
 
-class PetBrowser extends React.Component {
+class App extends React.Component {
+  
 }
 
+export default App
