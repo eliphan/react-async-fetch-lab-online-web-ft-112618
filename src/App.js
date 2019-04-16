@@ -2,7 +2,18 @@
 import React from 'react';
 
 class App extends Component {
-  
+   
+  state = {
+    peopleInSpace: []
+  }
+ 
+  render() {
+    return (
+      <div>
+        {this.state.peopleInSpace.map(person => person.name)}
+      </div>
+    )
+  }
   
   componentDidMount() {
     fetch('http://api.open-notify.org/astros.json')
